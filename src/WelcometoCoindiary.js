@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import gandhiimg from "../src/assets/gandhiorgimg.png";
 
 const WelcometoCoindiary = () => {
-  
   const [acceptedTnC, setAcceptedTnC] = useState(false);
 
   // Function to handle changes in the checkbox status
   const handleTnCToggle = () => {
     setAcceptedTnC(!acceptedTnC);
   };
+
   return (
     <div className="relative h-screen bg-black">
       <h1 className="text-white font-serif font-bold text-3xl absolute top-0 left-0 mt-8 ml-8">
@@ -43,31 +43,39 @@ const WelcometoCoindiary = () => {
             </h1>
           </div>
           <div className="flex justify-end   mt-16 ">
-          <label className="flex items-center cursor-pointer">
-          <input 
-            type="checkbox"
-            className=" text-white mt-12"
-            checked={acceptedTnC}
-            onChange={handleTnCToggle}
-          />
-            <div>
-            {/* {acceptedTnC && <BsCheckCircle className="text-green mt-3 " />} */}
-            </div>
-            <p className="text-white ml-3 mt-12">accept T&amp;C</p>
-            </label>
-            <Link to="/allcompstwt">
+            <label className="flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                className=" text-white mt-12"
+                checked={acceptedTnC}
+                onChange={handleTnCToggle}
+              />
               <div>
-                <button className="flex w-[12vw] h-[13h]  text-center justify-center    bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-11">
-                  Continue
-                  <AiOutlineArrowRight className="ml-2 mt-1"/>
-                </button>
+                {/* {acceptedTnC && <BsCheckCircle className="text-green mt-3 " />} */}
               </div>
-            </Link>
+              <p className="text-white ml-3 mt-12">accept T&amp;C</p>
+            </label>
+            {acceptedTnC ? (
+              <Link to="/homecoindiary">
+                <button className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-11">
+                  Continue
+                  <AiOutlineArrowRight className="ml-2 mt-1" />
+                </button>
+              </Link>
+            ) : (
+              <button
+                className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-11 opacity-50 cursor-not-allowed "
+                disabled
+              >
+                Continue
+                <AiOutlineArrowRight className="ml-2 mt-1" />
+              </button>
+            )}
           </div>
         </div>
 
-        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[25%] left-0 ml-32">
-          <img className="w-full  rounded-lg" src={gandhiimg} alt="Logo"/>
+        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[25%] left-10 ml-32">
+          <img className="w-full rounded-lg " src={gandhiimg} alt="Logo" />
 
           <h1 className="text-2xl text-center">Do you accept our T&C?</h1>
         </div>
