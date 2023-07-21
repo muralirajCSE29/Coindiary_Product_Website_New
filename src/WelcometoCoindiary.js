@@ -18,10 +18,10 @@ const WelcometoCoindiary = () => {
         Coindiary
       </h1>
       <div className="flex items-center justify-center h-full">
-        <div className="bg-stone p-4 h-[90vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[30vw] pt-16 sm:ml-52 border border-white/50">
+        <div className="bg-stone p-4 h-[100vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[50vw] pt-16 sm:ml-[52%] border border-stone/10">
           <h1 className="text-white text-center font-serif text-3xl">CD</h1>
 
-          <div className="flex  items-center justify-center mt-14 ">
+          <div className="flex  items-center justify-center mt-[15%]">
             <h1 className="text-white text-center font-mono text-4xl font-extrabold">
               Welcome to Coindiary
               <p className="text-gray text-left text-lg mt-5">
@@ -46,25 +46,25 @@ const WelcometoCoindiary = () => {
             <label className="flex items-center cursor-pointer">
               <input
                 type="checkbox"
-                className=" text-white mt-12"
+                className=" text-white mt-36"
                 checked={acceptedTnC}
                 onChange={handleTnCToggle}
               />
               <div>
-                {/* {acceptedTnC && <BsCheckCircle className="text-green mt-3 " />} */}
+                
               </div>
-              <p className="text-white ml-3 mt-12">accept T&amp;C</p>
+              <p className="text-white ml-3 mt-36">accept T&amp;C</p>
             </label>
             {acceptedTnC ? (
               <Link to="/homecoindiary">
-                <button className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-11">
+                <button className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-36">
                   Continue
                   <AiOutlineArrowRight className="ml-2 mt-1" />
                 </button>
               </Link>
             ) : (
               <button
-                className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-11 opacity-50 cursor-not-allowed "
+                className="flex w-[12vw] h-[13h] text-center justify-center bg-red-700 text-white px-4 py-2 rounded-md ml-12 mt-36 opacity-50 cursor-not-allowed "
                 disabled
               >
                 Continue
@@ -74,8 +74,8 @@ const WelcometoCoindiary = () => {
           </div>
         </div>
 
-        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[25%] left-10 ml-32">
-          <img className="w-full rounded-lg " src={gandhiimg} alt="Logo" />
+        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[15%] left-10 ml-48">
+          <img className="w-[22vw] rounded-lg " src={gandhiimg} alt="Logo" />
 
           <h1 className="text-2xl text-center">Do you accept our T&C?</h1>
         </div>
