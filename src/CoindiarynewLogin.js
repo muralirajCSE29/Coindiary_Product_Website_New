@@ -62,14 +62,14 @@ const CoindiarynewLogin = () => {
         Coindiary
       </h1>
       <div className="flex items-center justify-center h-full">
-        <div className="bg-stone p-4 h-[90vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[30vw] pt-36 sm:ml-52 border border-white/50">
-          <h1 className="text-white font-serif font-bold ml-20 text-2xl ">
+        <div className="bg-stone p-4 h-[100vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[50vw] pt-36 ml-[52%] border border-stone/10">
+          <h1 className="text-white font-serif font-bold text-center text-4xl ">
             Create a Publisher Account
           </h1>
-          <div className="text-white font-serif text-xl ml-20 mt-10 mb-4">
+          <div className="text-white font-serif text-xl ml-[22%] mt-10 mb-4">
             <label htmlFor="email">Official Email Id</label>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center ml-[22%] ">
             <input
               type="email"
               id="email"
@@ -89,14 +89,14 @@ const CoindiarynewLogin = () => {
             )}
           </div>
           {emailError && (
-            <div className="text-red-500 font-serif text-sm ml-20 mt-2">
+            <div className="text-red-500 font-serif text-sm ml-48 mt-2">
               {emailError}
             </div>
           )}
-          <div className="text-white font-serif text-xl text-left ml-20 mb-4 mt-6">
+          <div className="text-white font-serif text-xl text-left ml-[22%] mb-4 mt-6">
             <label htmlFor="password">Password</label>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center ml-[22%]">
             <input
               type={passwordVisible ? "text" : "password"}
               id="password"
@@ -126,11 +126,11 @@ const CoindiarynewLogin = () => {
             )}
           </div>
           {passwordError && (
-            <div className="text-red-500 font-serif text-sm ml-20 mt-2">
+            <div className="text-red-500 font-serif text-sm ml-48 mt-2">
               {passwordError}
             </div>
           )}
-          <div className="flex justify-center mt-4">
+          <div className="flex  mt-4 ml-[22%]">
             <button
               className="bg-green-800 w-full md:w-[20vw] h-[55px] hover:bg-blue text-lg font-serif text-white px-4 py-2 rounded mt-4"
               onClick={handleSubmit}
@@ -138,10 +138,10 @@ const CoindiarynewLogin = () => {
               Create Account
             </button>
           </div>
-          <div className="font-semibold text-md text-gray1 text-center mt-6">
+          <div className="font-semibold text-md text-gray1 ml-[36%]  mt-6">
             <Link to="/basicInfo">Or connect with socials</Link>
           </div>
-          <div className="flex justify-center">
+          <div className="flex ml-[22%] ">
             <a
               href="https://appleid.apple.com/"
               target="_blank"
@@ -154,7 +154,7 @@ const CoindiarynewLogin = () => {
               </span>
             </a>
           </div>
-          <div className="flex justify-center">
+          <div className="flex ml-[22%]">
             <a
               href="https://mail.google.com/"
               target="_blank"
@@ -168,8 +168,8 @@ const CoindiarynewLogin = () => {
             </a>
           </div>
         </div>
-        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[25%]   left-0  md:ml-3   2xl:ml-32  ">
-          <img className="w-full rounded-lg " src={foximg} alt="Logo" />
+        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[15%]   left-0  md:ml-3   2xl:ml-48  ">
+          <img className="w-[30vw]  rounded-lg " src={foximg} alt="Logo" />
         </div>
       </div>
     </div>
