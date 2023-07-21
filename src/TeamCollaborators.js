@@ -33,7 +33,7 @@ const TeamCollaborators = () => {
         Coindiary
       </h1>
       <div className="flex items-center justify-center h-full">
-        <div className="bg-stone p-4 h-[90vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[30vw] pt-16 sm:ml-52 border border-white/50">
+        <div className="bg-stone p-4 h-[100vh] w-[90vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] 2xl:w-[50vw] pt-16 sm:ml-[52%] border border-stone/10">
         <h1 className="flex justify-end text-gray font-semibold mr-3 mb-2">Step <span className="text-white">&nbsp;  4   </span>&nbsp;  of 6</h1>
         <div className="flex justify-end  items-center mb-6">
          
@@ -68,9 +68,9 @@ const TeamCollaborators = () => {
               }`}
             ></div>
           </div>
-          <h1 className="text-white mt-14 font-serif text-2xl">Team Colloborators</h1>
+          <h1 className="text-white mt-14 font-serif ml-[12%] text-2xl">Team Colloborators</h1>
 
-          <div className="flex justify-between items-center mt-14 ">
+          <div className="flex justify-between items-center  mt-14 ">
             
             <div className="flex items-center ">
                 
@@ -79,7 +79,7 @@ const TeamCollaborators = () => {
           </div>
          
 
-          <div className="flex mt-6 font-serif">
+          <div className="flex mt-6 font-serif ml-[12%]">
             <div className="flex flex-col mr-4">
               <p className="text-lg text-white mt-2">Founder</p>
               <input
@@ -87,7 +87,7 @@ const TeamCollaborators = () => {
             placeholder="Enter names"
             value={founderName}
             onChange={handleFounderChange}
-            className={`bg-slate-900 text-gray1 w-[12vw] h-[43px] border mt-3 border-gray1 rounded-md p-2 focus:outline-none ${
+            className={`bg-slate-900 text-gray1 w-[15vw] h-[43px] border mt-3 border-gray1 rounded-md p-2 focus:outline-none ${
               nameError ? 'border-red-500' : ''
             }`}
           />
@@ -96,22 +96,22 @@ const TeamCollaborators = () => {
           )}
             </div>
 
-            <div className="flex flex-col ml-10">
+            <div className="flex flex-col ml-[14%]">
               <p className="text-lg text-white mt-2">Team Members</p>
               <input
                 type="text"
                 placeholder="invite through mail"
-                className="bg-slate-900  text-gray1 border w-[12vw] h-[43px] mt-3 border-gray1 rounded-md p-2 focus:outline-none"
+                className="bg-slate-900  text-gray1 border w-[15vw] h-[43px] mt-3 border-gray1 rounded-md p-2 focus:outline-none"
               />
             </div>
           </div>
-          <div className="flex mt-8 font-serif ">
+          <div className="flex mt-12 font-serif ml-[12%] ">
             <div className="flex flex-col mr-4">
               <p className="text-lg text-white mt-2">Supported Wallets</p>
               <input
                 type="text"
                 placeholder="  e.g.(concept,development,launch,research,...)"
-                className="bg-slate-900 text-gray1 w-[27vw] h-[43px]  border mt-3 border-gray1 rounded-md p-2 focus:outline-none"
+                className="bg-slate-900 text-gray1 w-[29vw] h-[43px]  border mt-3 border-gray1 rounded-md p-2 focus:outline-none"
               />
             </div>
 
@@ -122,7 +122,7 @@ const TeamCollaborators = () => {
 
             
           </div>
-          <div className="flex justify-end mt-[46%]">
+          <div className="flex justify-center mt-[30%] ml-20">
             <button className="border border-gray-400 w-[5vw] text-white px-4 py-2   rounded-md mr-10">Skip</button>
             <Link to="/officiallinks">
             <button className="bg-red-700 w-[12vw] text-white px-4 py-2 rounded-md">next</button>
@@ -131,8 +131,8 @@ const TeamCollaborators = () => {
         </div>
         
 
-        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[25%] left-0 ml-32">
-        <img className="w-full  rounded-lg" src={foximg} alt="Logo" />
+        <div className="text-white font-serif font-bold text-xl text-left absolute mt-2 top-[15%] left-0 ml-48">
+        <img className="w-[30vw]  rounded-lg" src={foximg} alt="Logo" />
           
         </div>
       </div>
